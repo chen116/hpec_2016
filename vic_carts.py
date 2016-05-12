@@ -17,7 +17,7 @@ import datetime
 import json
 import sys
 import glob
-carted = 0
+carted = 1
 arg_index = 0
 threshold = -1
 
@@ -52,6 +52,11 @@ taskset_files_names=[]
 output_files_names=[]
 
 def read_CARTS_Output():
+	try: 
+		os.remove(CARTS_OUTPUT_FILE+"/cart_stdout")
+		os.remove(CARTS_OUTPUT_FILE+"/cart_stderr")
+	except:
+		print "remove cart_stdout or cart_stderr fail"
 	
 	if(carted):
 		os.chdir(CARTS_OUTPUT_FILE)
