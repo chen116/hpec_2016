@@ -17,6 +17,7 @@ import datetime
 import json
 import sys
 import glob
+from pprint import pprint
 carted = 1
 arg_index = 0
 threshold = -1
@@ -51,6 +52,7 @@ if not os.path.exists(CARTS_OUTPUT_FILE):
 taskset_files_names=[]
 output_files_names=[]
 
+
 def read_CARTS_Output():
 	try: 
 		os.remove(CARTS_OUTPUT_FILE+"/cart_stdout")
@@ -62,7 +64,15 @@ def read_CARTS_Output():
 		os.chdir(CARTS_OUTPUT_FILE)
 		for file in glob.glob("*"+INPUTFILE+"*"):
 			output_files_names.append(file)
+	schd = {}
+	schd['hm']={}
+	schd['lm']={}
+	schd['mm']={}
+	schd['bm']={}
+	schd['bl']={}
+
 	for files in output_files_names:
+		
 		vm_required_cpus_list = []
 		tree = ET.parse(files)
 		root = tree.getroot()
@@ -86,9 +96,55 @@ def read_CARTS_Output():
 		for i in range(0,len(vmParamDict['vm1'][0])):
 			avg+=float(vmParamDict['vm1'][0][i])/float(vmParamDict['vm1'][1][i])
 		vm_required_cpus_list.append(avg)
+		util_dist = files.split("_")[1]
+		period = files.split("_")[2]
+		util_rate = (files.split("_")[3])
 
-		print files +': ' +str(vm_required_cpus_list[0])
+		if("bimo-medium" in util_dist and "long" in period):
+			if(util_rate not in schd["bl"]):
+				schd["bl"][util_rate]=[]
+			if(vm_required_cpus_list[0]>8):
+				schd["bl"][util_rate].append(0)
+			else:
+				schd["bl"][util_rate].append(1)
+		if("bimo-medium" in util_dist and "mod" in period):
+			if(util_rate not in schd["bm"]):
+				schd["bm"][util_rate]=[]
+			if(vm_required_cpus_list[0]>8):
+				schd["bm"][util_rate].append(0)
+			else:
+				schd["bm"][util_rate].append(1)
+		if("light" in util_dist):
+			if(util_rate not in schd["lm"]):
+				schd["lm"][util_rate]=[]
+			if(vm_required_cpus_list[0]>8):
+				schd["lm"][util_rate].append(0)
+			else:
+				schd["lm"][util_rate].append(1)
+		if("uni-medium" in util_dist):
+			if(util_rate not in schd["mm"]):
+				schd["mm"][util_rate]=[]
+			if(vm_required_cpus_list[0]>8):
+				schd["mm"][util_rate].append(0)
+			else:
+				schd["mm"][util_rate].append(1)
 
+		if("heavy" in util_dist):
+			if(util_rate not in schd["hm"]):
+				schd["hm"][util_rate]=[]
+			if(vm_required_cpus_list[0]>8):
+				schd["hm"][util_rate].append(0)
+			else:
+				schd["hm"][util_rate].append(1)
+
+
+		# print files +': ' +str(vm_required_cpus_list[0])
+	for udist in schd:
+		for rate in schd[udist]:
+
+			schd[udist][rate] = sum(schd[udist][rate])/len(schd[udist][rate]) 
+			#print rate
+	pprint(schd)
 	# if(threshold==-1):
 	# 	maxx = max(vm_required_cpus_list)
 	# 	minn = min(vm_required_cpus_list)
