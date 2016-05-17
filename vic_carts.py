@@ -107,6 +107,7 @@ def read_CARTS_Output():
 				schd["bl"][util_rate].append(0)
 			else:
 				schd["bl"][util_rate].append(1)
+
 		if("bimo-medium" in util_dist and "mod" in period):
 			if(util_rate not in schd["bm"]):
 				schd["bm"][util_rate]=[]
@@ -142,7 +143,7 @@ def read_CARTS_Output():
 	for udist in schd:
 		for rate in schd[udist]:
 
-			schd[udist][rate] = sum(schd[udist][rate])/len(schd[udist][rate]) 
+			schd[udist][rate] = sum(schd[udist][rate])/len(schd[udist][rate]) + len(schd[udist][rate])*10
 			#print rate
 	pprint(schd)
 	# if(threshold==-1):
