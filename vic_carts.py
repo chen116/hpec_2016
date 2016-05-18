@@ -143,7 +143,15 @@ def read_CARTS_Output():
 	for udist in schd:
 		for rate in schd[udist]:
 
-			schd[udist][rate] = sum(schd[udist][rate])/len(schd[udist][rate]) + len(schd[udist][rate])*10
+			#schd[udist][rate] = float(sum(schd[udist][rate]))/len(schd[udist][rate]) + len(schd[udist][rate])*10
+			iter_cnt = len(schd[udist][rate])
+			schd_bility = float(sum(schd[udist][rate]))/len(schd[udist][rate]) 
+			schd[udist][rate] = []
+			schd[udist][rate].append(schd_bility)
+			schd[udist][rate].append(iter_cnt)
+
+			# float(sum(schd[udist][rate]))/len(schd[udist][rate]) + len(schd[udist][rate])*10
+			
 			#print rate
 	pprint(schd)
 	# if(threshold==-1):
