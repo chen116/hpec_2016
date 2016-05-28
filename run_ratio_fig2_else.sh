@@ -4,8 +4,8 @@ WORK_DIR="./run-data-fig2/"
 PROG=$1
 
 #declare -a Dist=("bimo-medium")
-declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
-#declare -a Dist=("uni-light")
+#declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
+declare -a Dist=("uni-light" "uni-medium")
 declare -a PDist=("uni-moderate")
 #declare -a Dist=("uni-light" "uni-medium" "uni-heavy")
 #declare -a Util=("1" "2" "3" "4" "5" "6" "7" "8")
