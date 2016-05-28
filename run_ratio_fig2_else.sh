@@ -1,6 +1,6 @@
 #!/bin/bash
 date
-WORK_DIR="/root/experiment-scripts/run-data-fig2/"
+WORK_DIR="./run-data-fig2/"
 PROG=$1
 
 #declare -a Dist=("bimo-medium")
