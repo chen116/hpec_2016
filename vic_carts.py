@@ -100,10 +100,12 @@ def read_CARTS_Output():
 		period = files.split("_")[2]
 		util_rate = (files.split("_")[3])
 
+		util_thres = 4.0
+
 		if("bimo-medium" in util_dist and "long" in period):
 			if(util_rate not in schd["bl"]):
 				schd["bl"][util_rate]=[]
-			if(vm_required_cpus_list[0]>8):
+			if(vm_required_cpus_list[0]>util_thres):
 				schd["bl"][util_rate].append(0)
 			else:
 				schd["bl"][util_rate].append(1)
@@ -111,21 +113,21 @@ def read_CARTS_Output():
 		if("bimo-medium" in util_dist and "mod" in period):
 			if(util_rate not in schd["bm"]):
 				schd["bm"][util_rate]=[]
-			if(vm_required_cpus_list[0]>8):
+			if(vm_required_cpus_list[0]>util_thres):
 				schd["bm"][util_rate].append(0)
 			else:
 				schd["bm"][util_rate].append(1)
 		if("light" in util_dist):
 			if(util_rate not in schd["lm"]):
 				schd["lm"][util_rate]=[]
-			if(vm_required_cpus_list[0]>8):
+			if(vm_required_cpus_list[0]>util_thres):
 				schd["lm"][util_rate].append(0)
 			else:
 				schd["lm"][util_rate].append(1)
 		if("uni-medium" in util_dist):
 			if(util_rate not in schd["mm"]):
 				schd["mm"][util_rate]=[]
-			if(vm_required_cpus_list[0]>8):
+			if(vm_required_cpus_list[0]>util_thres):
 				schd["mm"][util_rate].append(0)
 			else:
 				schd["mm"][util_rate].append(1)
@@ -133,7 +135,7 @@ def read_CARTS_Output():
 		if("heavy" in util_dist):
 			if(util_rate not in schd["hm"]):
 				schd["hm"][util_rate]=[]
-			if(vm_required_cpus_list[0]>8):
+			if(vm_required_cpus_list[0]>util_thres):
 				schd["hm"][util_rate].append(0)
 			else:
 				schd["hm"][util_rate].append(1)
