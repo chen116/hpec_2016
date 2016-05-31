@@ -3,8 +3,8 @@ date
 WORK_DIR="./run-data-fig2/"
 PROG=$1
 
-declare -a Dist=("bimo-medium")
-#declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
+#declare -a Dist=("bimo-medium")
+declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
 #declare -a Dist=("uni-light" "uni-medium")
 #declare -a PDist=("uni-moderate")
 #declare -a Dist=("uni-light" "uni-medium" "uni-heavy")
@@ -13,8 +13,8 @@ declare -a Dist=("bimo-medium")
 #declare -a Dist=("single" "double")
 #declare -a Dist=("single")
 #declare -a PDist=("uni-long")
-#declare -a PDist=("uni-moderate")
-declare -a PDist=("uni-longRTXen")
+declare -a PDist=("uni-moderate")
+#declare -a PDist=("uni-longRTXen")
 #declare -a Util=("125" "250" "375" "500" "625" "750" "875" "1000")
 #declare -a Util=("0.2" "0.4" "0.6" "0.8" "1" "1.2" "1.4" "1.6" "1.8" "2" "2.2" "2.4" "2.6" "2.8" "3" "3.2" "3.4" "3.6" "3.8" "4" "4.2" "4.4" "4.6" "4.8" "5" "5.2" "5.4" "5.6" "5.8" "6" "6.2" "6.4" "6.6" "6.8" "7" "7.2" "7.4" "7.6" "7.8" "8" "8.2" "8.4")
 #declare -a Util=("0.2" "0.4" "0.6" "0.8" "1.2" "1.4" "1.6" "1.8" "2.2" "2.4" "2.6" "2.8" "3.2" "3.4" "3.6" "3.8" "4.2" "4.4" "4.6" "4.8" "5.2" "5.4" "5.6" "5.8" "6.2" "6.4" "6.6" "6.8" "7.2" "7.4" "7.6" "7.8" "8")
