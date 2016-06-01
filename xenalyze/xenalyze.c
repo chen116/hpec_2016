@@ -10077,7 +10077,7 @@ error_t cmd_parser(int key, char *arg, struct argp_state *state)
 
 const struct argp_option cmd_opts[] =  {
     /* Dump group */
-    { .name = "dump-aaall",
+    { .name = "dump-all",
       .key = OPT_DUMP_ALL,
       .group = OPT_GROUP_DUMP,
       .doc = "Dump all records as they come in.", },
