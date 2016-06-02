@@ -1,0 +1,96 @@
+<component name="system" resource_model="MPR2 model" >
+<resource>
+<model cpus="45" period="1" execution_time="45"> </model> 
+</resource> 
+<processed_task> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+<model period="1" execution_time="1" deadline="1" > </model> 
+</processed_task> 
+<component name="vm1" resource_model="MPR2 model" >
+<resource>
+<model cpus="37" period="10000" execution_time="368248"> </model> 
+</resource> 
+<processed_task> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9953" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+<model period="10000" execution_time="9952" deadline="10000" > </model> 
+</processed_task> 
+</component>
+</component>
