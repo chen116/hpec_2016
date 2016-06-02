@@ -31,6 +31,7 @@ for target in targets:
 
 
 	for file in target_f_long:
+		print file
 		with open(file, "r") as ins:
 			for line in ins:
 				if 'num' in line:
@@ -43,6 +44,7 @@ for target in targets:
 
 
 	for file in target_f_mod:
+		print file
 		with open(file, "r") as ins:
 			for line in ins:
 				if 'num' in line:
