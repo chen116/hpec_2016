@@ -4,8 +4,8 @@ WORK_DIR="./run-data-fig2/"
 PROG=$1
 
 #declare -a Dist=("bimo-medium")
-declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
-#declare -a Dist=("uni-light" "uni-medium")
+#declare -a Dist=("uni-heavy" "uni-medium" "uni-light" "bimo-medium")
+declare -a Dist=("uni-light" "uni-medium")
 #declare -a PDist=("uni-moderate")
 #declare -a Dist=("uni-light" "uni-medium" "uni-heavy")
 #declare -a Util=("1" "2" "3" "4" "5" "6" "7" "8")
@@ -26,7 +26,7 @@ declare -a PDist=("uni-moderate")
 #declare -a Util=("2.2" "2.6" "3.2" "3.6" "4.2" "4.6" "5.2" "5.6" "6.2" "6.6" "7" "7.2")
 #declare -a Util=("0.4" "1" "1.4" "2" "2.4" "3" "3.4" "4")
 #declare -a Util=("1" "2" "3" "4" "5" "6" "7" "8")
-declare -a Util=("4" "4.2" "4.4" "4.6" "4.8" "5")
+declare -a Util=("3" "3.4" "4")
 declare -a Rep=("0" "1" "2" "3" "4" "5" "6" "7" "8" "9" "10" "11" "12" "13" "14" "15" "16" "17" "18" "19" "20" "21" "22" "23" "24")
 #declare -a Rep=("0" "1" "2")
 cd "$WORK_DIR""/""$PROG"; date
